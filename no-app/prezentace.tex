@@ -1,4 +1,4 @@
-\documentclass[12pt]{beamer}
+\documentclass[12pt,xcolor=usenames,dvipsnames]{beamer}
 \usetheme{CambridgeUS}
 
 \usepackage[utf8]{inputenc}
@@ -10,7 +10,6 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{fancyvrb} %Verbatim 
-\usepackage{listings}
 
 \usefonttheme{serif}
 
@@ -100,7 +99,7 @@
 	\frametitle{Studované jevy: denotační analýza}
 	\framesubtitle{Příprava textu}
 
-
+	\vspace{-10pt}
 	\begin{footnotesize}
 		\begin{Verbatim}[commandchars=+\[\]]
 			 1|2   3   4    5       6      7|8       9    10
@@ -158,7 +157,7 @@
 	Koincidence je definována jako výskyt dvou hřebů v jednom verši. Existují koincidence:
 	
 	\begin{description}
-		\item[náhodné] pokud pravděpodobnost výskytu daných dvou hřebu je dostatečně vysoká,
+		\item[náhodné] pokud pravděpodobnost výskytu daných dvou hřebů je dostatečně vysoká,
 		\item[signifikantní] v případě, že pravděpodobnost tohoto výskytu je malá.
 	\end{description}
 
@@ -195,10 +194,10 @@
 	\frametitle{Studované jevy:  denotační analýza}
 	\framesubtitle{Přehled indexů nespojitosti, neizolovanosti a dosažitelnosti}
 
-	\begin{tabular}{| p{4.0cm}|p{7.0cm}|}
+	\begin{tabular}{| p{4.1cm}|p{7.0cm}|}
 	\hline
 		\bfseries 
-		Indexy nespojitosti/ neizolovanosti/ \mbox{dosažitelnosti} & \bfseries Překlady \\ 
+		\mbox{Indexy nespojitosti/} neizolovanosti/ \mbox{dosažitelnosti} & \bfseries Překlady \\ 
 	\hline $0{,}018$/$0{,}273$/---       & A. E. Mužík, D. Wagnerová \\ 
 	\hline $0{,}067$/$0{,}333$/$0{,}5$	 & V. K. Šembera, A. Bejblík \\ 
 	\hline $0{,}067$/$0{,}333$/---       & E. Stoklas, K. Resler 1948 \\ 
@@ -207,6 +206,7 @@
 	\hline 
 	\end{tabular} 
 	
+	\vspace{-5pt}
 	Pět překladů je charakterizováno unikátními indexy: překlad Kamila Reslera vydaný roku 1948, překlady Jaroslava Vrchlického z let 1881 a 1890, překlad Svatoupluka Kadlece a překlad Jiřího Taufera.
 
 \end{frame}
@@ -285,6 +285,55 @@
 
 \end{frame}
 
+\begin{frame}
+	\frametitle{Odpovědi na připomínky práce}
+	\framesubtitle{Vysvětlete na některém překladu agregaci, \textbf{aliteraci} a asonanci.}
+
+	\begin{center}
+	
+		\textsc{Edgar Allan Poe -- Havran} {\tiny (překlad Jaroslav Vrchlický 1881)}
+	
+		\emph{\textbf{\textcolor{blue}{H}}edvábná \textbf{\textcolor{Red}{s}}e \textbf{\textcolor{blue}{h}}nula \textbf{\textcolor{Green}{c}}lona, \textbf{\textcolor{Green}{c}}os \textbf{\textcolor{Orchid}{v}} \textbf{\textcolor{BurntOrange}{n}}í šustí, \textbf{\textcolor{Green}{c}}os \textbf{\textcolor{Orchid}{v}} \textbf{\textcolor{BurntOrange}{n}}í \textbf{\textcolor{Red}{s}}toná,\\
+mysl plní se a vlní, bázně také neznajíc,\\
+takže srdce si dodávám, vstávám a si předříkávám:\\
+„Chodec to, ždá nocleh sobě, bloudě kol mých okenic,\\
+nějaký to chodec pozdní bloudí u mých okenic --\\
+        to je to a pranic víc.“\\\dots}
+
+	\end{center}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Odpovědi na připomínky práce}
+	\framesubtitle{Vysvětlete na některém překladu agregaci, \textbf{aliteraci} a asonanci.}
+
+	\begin{equation*}
+		{K\!A}_{E.A.Poe} = 3{,}79759
+	\end{equation*}
+{\footnotesize 
+	\begin{tabular}{|lr|lr|lr|}
+\hline \bfseries Text & \bfseries $KA_{\text{báseň}}$ & \bfseries Text & \bfseries $KA_{\text{báseň}}$ & \bfseries Text & \bfseries $KA_{\text{báseň}}$ \\ 
+\hline Mužík          & 1,58133                       & Resler ‘56     & 3,33302                       & Šembera        & 3,57143 \\ 
+\hline Vrchlický ‘90  & 1,76623                       & Taufer         & 3,36161                       & Dostál-Lutinov & 3,58246 \\ 
+\hline Wagnerová      & 1,98075                       & Resler ‘48     & 3,48301                       & Vrchlický ‘81  & 3,64690 \\ 
+\hline Čapek          & 3,09970                       & Babler         & 3,49542                       & Kadlec         & 3,66010 \\ 
+\hline Nezval         & 3,14763                       & Slavík         & 3,53020                       & Stoklas        & 3,87856 \\ 
+\hline Havel          & 3,28966                       & Černý          & 3,56506                       & Bejblík        & 3,99667 \\ 
+\hline 
+\end{tabular} 
+}
+
+\end{frame}
+
+\defverbatim{\ason0}{%
+\begin{footnotesize}
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`$=3\catcode`^=7\catcode`_=8}]
+
+
+\end{Verbatim}
+\end{footnotesize}
+}
 
 \defverbatim{\asonA}{%
 \begin{footnotesize}
@@ -315,11 +364,14 @@ O, E, U, O, A, I, I, E, A, Y, I, E, I, O, E, E, E, A, A, E, A, Y
 		
 			{\small \emph{Once upon a midnight dreary, while I pondered, weak and weary,\\
 		Over many a quaint and curious volume of forgotten lore --\\
-		While I nodded, nearly napping, suddenly there came a tapping\ldots}}\pause
+		While I nodded, nearly napping, suddenly there came a tapping\ldots}}
 	
 		\end{center}
 	}
-	
+\only<1>{
+\ason0
+}	
+\pause
 
 \only<2>{
 \asonA
@@ -352,6 +404,26 @@ O, E, U, O, A, I, I, E, A, Y, I, E, I, O, E, E, E, A, A, E, A, Y
 	\end{tabular} }
 
 
+\end{frame}
+
+\begin{frame}
+	\frametitle{Odpovědi na připomínky práce}
+	\framesubtitle{Jak složitá byla algoritmizace studované problematiky?}
+
+	Složitost se pohybovala od lehké (výpočet frekvence znaků a slov) přes složitější (fonické jevy) po velmi komplexní (denotační analýza).
+
+	Ta sestává ze dvou částí: dělení textu do hřebů a zobrazení výsledků analýzy.
+
+	Implementace dělení textu do hřebů byl z hlediska vývoje nejnáročnější úkol  z celé DP.
+
+\end{frame}
+
+\begin{frame}
+\begin{block}{}
+\begin{center}
+\textcolor{Maroon}{\textbf{{\huge Děkuji za pozornost!}}}
+\end{center}
+\end{block}
 \end{frame}
 
 \end{document}
